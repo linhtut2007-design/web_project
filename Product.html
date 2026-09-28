@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store | Products</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a.active, nav a:hover {
+            color: #3498db;
+        }
+
+        /* Products Section */
+        .products-page {
+            padding: 40px 50px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .products-page h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .specs {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+    
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>LaptopStore</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Products.html" class="active">Products</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </header>
+
+    <!-- Products Catalog -->
+    <section class="products-page">
+        <h2>Our Laptops Catalog</h2>
+        <p class="subtitle">Choose from our top-rated laptops for school and work.</p>
+
+        <div class="product-grid">
+
+            
+            <div class="product-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.Cb355xfApkgSoXhKc_S3xgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Student Laptop">
+                <h3>HP 15s</h3>
+                <p class="specs">Intel i5 | 8GB RAM | 256GB SSD</p>
+                <div class="price">$499.99</div>
+                <button class="btn" onclick="alert('Added Student Lite 14 to cart!')">Buy Now</button>
+            </div>
+
+            <!-- Laptop 2 -->
+            <div class="product-card">
+                <img src="https://laptopmedia.com/wp-content/uploads/2022/09/3-20-e1662987253972.jpg" alt="Workstation Laptop">
+                <h3>Asus Vivobook</h3>
+                <p class="specs">Intel i7 | 16GB RAM | 512GB SSD</p>
+                <div class="price">$899.99</div>
+                <button class="btn" onclick="alert('Added WorkBook Pro 15 to cart!')">Buy Now</button>
+            </div>
+
+            
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.djUFMS2f_8a14Um_qD0GGAHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gaming Laptop">
+                <h3>Asus TUF A15 Gaming</h3>
+                <p class="specs">AMD Ryzen 7 | RTX 4060 | 1TB SSD</p>
+                <div class="price">$1,299.99</div>
+                <button class="btn" onclick="alert('Added Pro Gamer X to cart!')">Buy Now</button>
+            </div>
+
+            <!-- Laptop 4 -->
+            <div class="product-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.4g5zymbuLqx2iiOiXu0KaAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Macbook">
+                <h3>Macbook Air M2</h3>
+                <p class="specs">Apple M2 | 8GB RAM | 256GB SSD</p>
+                <div class="price">$999.99</div>
+                <button class="btn" onclick="alert('Added AirSlim 13 to cart!')">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 LaptopStore - Student Web Project</p>
+    </footer>
+
+</body>
+</html>
